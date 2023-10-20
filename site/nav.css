@@ -1,0 +1,77 @@
+nav {
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	box-sizing: border-box;
+	width:100%;
+}
+
+nav .dropdown {
+	width: 340px;
+	height: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	background: var(--panel-light);
+	color: var(--text-light);
+	font-weight: bold;
+	border: 1px solid #000;
+	border-radius: 0 0 8px 8px;
+	box-shadow: 0 1px 2px 0px #000;
+	transform: translate(0, -8px);
+	transition: transform 0.2s ease-in-out;
+}
+
+nav .dropdown:hover {
+	transform: translate(0, -1px);
+	transition: transform 0.2s ease-out;
+}
+
+nav > .dropdown > button {
+	display: block;
+	width: 100%;
+	background: transparent;
+	border: 0;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+nav > .dropdown > .dropdown-menu {
+	/* These manage the slide-out / slide-in */
+	overflow: hidden;
+	max-height: 0px;
+	transition: max-height 0.2s ease-in;
+	
+	transform: translate(0,-4px);
+	background-color: var(--panel-light);
+	margin: 0;
+	padding: 0 8px 0 8px;
+}
+
+nav > .dropdown > .dropdown-menu.open {
+	/* These manage the slide-out / slide-in */
+	display: block;
+	max-height: 110px;
+	transition: max-height 0.6s ease-out;
+	
+	padding: 8px;
+}
+
+nav > li {
+	display: block;
+	width: 100%;
+}
+
+.dropdown-item {
+	display: block;
+	margin: 0;
+	padding: 3px;
+	width: 100%;
+	font-size: 80%;
+	text-decoration: none;
+	text-align: center;
+}
