@@ -10,7 +10,7 @@ body {
 	color: var(--text-dark);
 	margin: 0;
 	padding: 0;
-	padding-top: 25px;
+	padding-top: 50px;
 }
 
 a {
@@ -103,10 +103,18 @@ info-card {
 	background: linear-gradient(139deg, rgba(148,110,191,1) 13%, rgba(221,200,236,1) 35%, rgba(240,176,228,1) 45%, rgba(189,111,209,1) 75%);
 	color: var(--text-light);
 	
+	border: 0;
 	border-radius: 12px;
 	padding: 12px;
 	margin-left: 20px;
 	margin-right: 20px;
+	
+	box-shadow:
+		0 4px 8px 0 rgba(0,0,0,0.5),
+		16px 16px 0 0 #af64ed,
+		16px 20px 8px 0 rgba(0,0,0,0.5),
+		-16px 32px 0 0 #582482,
+		-16px 36px 8px 0 rgba(0,0,0,0.5);
 }
 
 info-card img {
@@ -135,4 +143,10 @@ skill-grid .contents {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	min-width: 340px;
+	justify-content: center;
+}
+
+skill-grid .contents a {
+	margin-left: auto;
+	margin-right: auto;
 }
