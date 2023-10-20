@@ -7,10 +7,18 @@ body {
 	
 	background-color: #150726;
 	font-family: sans-serif;
-	color: var(--text-light);
+	color: var(--text-dark);
 	margin: 0;
 	padding: 0;
 	padding-top: 25px;
+}
+
+a {
+	color: #f07fd4;
+}
+
+a:visited {
+	color: #f23ac4;
 }
 
 section {
@@ -20,6 +28,7 @@ section {
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-bottom: 40px;
+	margin-top: 40px;
 }
 
 section > h1 {
@@ -65,7 +74,7 @@ project-card img {
 project-card a {
 	display: flex;
 	text-decoration: none;
-	color: var(--text-dark);
+	color: var(--text-dark) !important;
 	margin: 0;
 }
 
@@ -87,4 +96,43 @@ project-card h1 {
 
 project-card:hover {
 	box-shadow: 0 0 2px 1px var(--hilight);
+}
+
+info-card {
+	background: rgb(148,110,191);
+	background: linear-gradient(139deg, rgba(148,110,191,1) 13%, rgba(221,200,236,1) 35%, rgba(240,176,228,1) 45%, rgba(189,111,209,1) 75%);
+	color: var(--text-light);
+	
+	border-radius: 12px;
+	padding: 12px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+info-card img {
+	float: right;
+}
+
+info-card h1 {
+	font-size: 120%;
+	font-weight: bold;
+	margin: 8px 20px 0px 20px;
+}
+
+info-card h2 {
+	font-size: 100%;
+	font-weight: bold;
+	font-style: italic;
+	margin: 0px 20px 8px 20px;
+}
+
+skill-grid {
+	box-sizing: border-box;
+	padding: 30px;
+}
+
+skill-grid .contents {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	min-width: 340px;
 }

@@ -12,10 +12,10 @@ nav {
 
 nav .dropdown {
 	width: 340px;
-	height: 25px;
+	height: 32px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 10px;
+	padding-top: 0px;
 	background: var(--panel-light);
 	color: var(--text-light);
 	font-weight: bold;
@@ -33,11 +33,16 @@ nav .dropdown:hover {
 
 nav > .dropdown > button {
 	display: block;
+	box-sizing: border-box;
 	width: 100%;
+	position: relative;
+	top: -3px;
 	background: transparent;
 	border: 0;
+	font-size: 1.5rem;
 	font-weight: bold;
 	cursor: pointer;
+	padding: 3px;
 }
 
 nav > .dropdown > .dropdown-menu {
@@ -46,7 +51,7 @@ nav > .dropdown > .dropdown-menu {
 	max-height: 0px;
 	transition: max-height 0.2s ease-in;
 	
-	transform: translate(0,-4px);
+	transform: translate(0,-14px);
 	background-color: var(--panel-light);
 	margin: 0;
 	padding: 0 8px 0 8px;
@@ -71,7 +76,18 @@ nav > li {
 	margin: 0;
 	padding: 3px;
 	width: 100%;
-	font-size: 80%;
+	font-size: 1rem;
 	text-decoration: none;
 	text-align: center;
+	color: var(--text-light) !important;
+}
+
+.dropdown-item:hover {
+	color: #52073f !important;
+	color: #e63ebb !important;
+	text-shadow:
+		1px 1px 0 #000,
+		-1px 1px 0 #000,
+		1px -1px 0 #000,
+		-1px -1px 0 #000;
 }
