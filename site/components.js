@@ -5,7 +5,7 @@ projectCardTemplate.innerHTML = `
 			display: flex;
 			box-sizing: border-box;
 			width: 340px;
-			min-height: 9em;
+			min-height: 12em;
 			border: 1px solid rgba(0, 0, 0, 0.5);
 			box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8);
 			background: background: rgb(35,7,66);
