@@ -11,10 +11,10 @@ projectCardTemplate.innerHTML = `
 			background: background: rgb(35,7,66);
 			background: linear-gradient(
 				139deg,
-				rgba(35,7,66,1) 19%,
-				rgba(56,26,77,1) 35%,
-				rgba(64,32,94,1) 45%,
-				rgba(52,7,64,1) 65%
+				rgba(38,7,66,1) 19%,
+				rgba(42,16,70,1) 35%,
+				rgba(46,22,74,1) 45%,
+				rgba(50,7,64,1) 65%
 				);
 			border-radius: 8px;
 			margin: 0.5em;
@@ -34,6 +34,7 @@ projectCardTemplate.innerHTML = `
 			height: 4em;
 			margin: 1em;
 			object-fit: contain;
+			image-rendering: pixelated;
 		}
 		
 		.project-card a {
