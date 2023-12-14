@@ -38,7 +38,7 @@ section > h1 {
 	color: var(--text-dark);
 	
 }
-
+/*
 project-card {
 	display: flex;
 	box-sizing: border-box;
@@ -46,7 +46,6 @@ project-card {
 	min-height: 4em;
 	border: 1px solid rgba(0, 0, 0, 0.5);
 	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8);
-	/*background: var(--panel-light);*/
 	background: background: rgb(35,7,66);
 	background: linear-gradient(
 		139deg,
@@ -97,6 +96,7 @@ project-card h1 {
 project-card:hover {
 	box-shadow: 0 0 2px 1px var(--hilight);
 }
+*/
 
 info-card {
 	background: rgb(148,110,191);

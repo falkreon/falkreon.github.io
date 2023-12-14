@@ -11,6 +11,7 @@
 <body>
 	<script src="jquery.js"></script>
 	<script src="menu.js"></script>
+	<script src="components.js"></script>
 	<nav>
 		<div class="dropdown">
 			<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
@@ -23,12 +24,9 @@
 				<li>
 					<a class="dropdown-item" href="mods.html">Mods</a>
 				</li>
-				<!--
-				TODO: Create this page
 				<li>
 					<a class="dropdown-item" href="projects.html">Projects</a>
 				</li>
-				-->
 			</ul>
 		</div>
 	</nav>
@@ -36,92 +34,76 @@
 	<section class="mod-list">
 		<h1>Currently Maintained</h1>
 	
-		<project-card>
-			<a href="https://modrinth.com/mod/scarves">
-				<img src="image/project/scarves.png">
-				<div>
-					<h1>Scarves</h1>
-					Comfortable dynamic simulated cloth trinkets
-				</div>
-			</a>
+		<project-card
+			name="Scarves"
+			image="image/project/scarves.png"
+			href="https://modrinth.com/mod/scarves">
+			
+			Comfortable dynamic simulated cloth trinkets
 		</project-card>
 		
-		<project-card>
-			<a href="https://modrinth.com/mod/engination">
-				<img src="image/project/engination.png">
-				<div>
-					<h1>Engination</h1>
-					Gadget blocks for convention centers and adventure maps
-				</div>
-			</a>
+		<project-card
+			name="Engination"
+			image="image/project/engination.png"
+			href="https://modrinth.com/mod/engination">
+			
+			Gadget blocks for convention centers and adventure maps
 		</project-card>
 		
-		<project-card>
-			<a href="https://modrinth.com/mod/conventional-cubes">
-				<img src="image/project/conventional_cubes.png">
-				<div>
-					<h1>Conventional Cubes</h1>
-					Over 200 cosmetic blocks from classic video games and original creations
-				</div>
-			</a>
+		<project-card
+			name="Conventional Cubes"
+			image="image/project/conventional_cubes.png"
+			href="https://modrinth.com/mod/conventional-cubes">
+			
+			Over 200 cosmetic blocks from classic video games and original creations
 		</project-card>
 		
-		<project-card>
-			<a href="https://modrinth.com/mod/tablesaw">
-				<img src="image/project/tablesaw.gif">
-				<div>
-					<h1>Table Saw</h1>
-					A sawmill for cutting wood blocks
-				</div>
-			</a>
+		<project-card
+			name="Table Saw"
+			image="image/project/tablesaw.gif"
+			href="https://modrinth.com/mod/tablesaw">
+			
+			A sawmill for cutting wood blocks
 		</project-card>
 		
-		<project-card>
-			<a href="https://modrinth.com/mod/suspicious-shapes">
-				<img src="image/project/susshapes.png">
-				<div>
-					<h1>Suspicious Shapes</h1>
-					Use glTF models in resource packs and mods!
-				</div>
-			</a>
+		<project-card
+			name="Suspicious Shapes"
+			image="image/project/susshapes.png"
+			href="https://modrinth.com/mod/suspicious-shapes">
+			
+			Use glTF models in resource packs and mods!
 		</project-card>
 		
-		<project-card>
-			<a href="https://modrinth.com/mod/static-data">
-				<img src="image/project/staticdata.png">
-				<div>
-					<h1>Static Data</h1>
-					Access mod integration data right away from your own mod initializer!
-				</div>
-			</a>
+		<project-card
+			name="Static Data"
+			image="image/project/staticdata.png"
+			href="https://modrinth.com/mod/static-data">
+			
+			Access mod integration data right away from your own mod initializer!
 		</project-card>
 	</section>
 
 	<section class="mod-list">
 		<h1>Maintained by Other Devs</h1>
 		
-		<project-card>
-			<a href="https://github.com/CottonMC/LibGui">
-				<img src="image/project/libgui.png">
-				<div>
-					<h1>LibGui</h1>
-					Minecraft GUIs without spending forever painstakingly aligning things to the background image
-				</div>
-			</a>
+		<project-card
+			name="LibGUI"
+			image="image/project/libgui.png"
+			href="https://github.com/CottonMC/LibGui">
+			
+			Minecraft GUIs without spending forever painstakingly aligning things to the background image
 		</project-card>
 	</section>
 	
 	<section class="mod-list">
 		<h1>Debuggy Contributions</h1>
 		
-		<project-card>
-			<a href="https://modrinth.com/mod/arch-ex">
-				<img src="image/project/archex.png">
-				<div>
-					<h1>Architecture Extensions</h1>
-					A mod that allows you to make more detailed builds with all kinds of new building blocks and shapes
-				</div>
-			</a>
+		<project-card
+			name="Architecture Extensions"
+			image="image/project/archex.png"
+			href="https://modrinth.com/mod/arch-ex">
+			
+			A mod that allows you to make more detailed builds with all kinds of new building blocks and shapes
 		</project-card>
 	</section>
 	
